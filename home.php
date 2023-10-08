@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +10,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php
+        echo $_SESSION["username"];
+    ?>
+    <br>
     <table>
         <tr>
         <?php
+        $username = $_SESSION["username"];
         include "dbConnection.php";
-        $data = "SELECT * FROM tasks";
+        $data = "SELECT * FROM `tasks` WHERE `owner` LIKE '$username'";
         $result = $sql->query($data);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {

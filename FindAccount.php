@@ -1,5 +1,6 @@
 <?php 
     include "dbConnection.php";
+    session_start();
     $username = $_POST["username"];
     $password = $_POST["password"];
 
@@ -9,6 +10,7 @@
     while ($row = mysqli_fetch_assoc($find)) {
         if ($password == $row["password"]) {
             header("Location: home.php");
+            $_SESSION["username"] = $username;
         }
         else {
             header("Location: login.php");
