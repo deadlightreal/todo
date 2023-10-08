@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+.main {
+    background-color: rgb(206, 206, 206);
+    border-radius: 15px;
+    width: 30%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    outline: solid;
+    outline-width: 3px;
+}
+
+#username {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    width: 80%;
+    height: 7%;
+    border-radius: 15px;
+}
+
+#email {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    width: 80%;
+    height: 7%;
+    border-radius: 15px;
+}
+
+#password {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    width: 80%;
+    height: 7%;
+    border-radius: 15px;
+}
+
+#submit {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    width: 80%;
+    height: 7%;
+    border-radius: 15px;
+}
