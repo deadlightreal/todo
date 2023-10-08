@@ -36,7 +36,11 @@
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>" . $row["name"] . "</tr> <br>";
-                echo "<tr>" . $row["description"] . "</tr> <br>";
+                echo "<tr>" . $row["description"] . "</tr>";
+                echo '<form action="deletetask.php" method="POST">
+                        <input type="hidden" name="task-id" value="' . $row["id"] . '">
+                        <input type="submit" value="Delete">
+                      </form>';
             }
         }
         ?>
