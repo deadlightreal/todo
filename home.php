@@ -19,6 +19,9 @@
     <form action="newTask.php">
         <input type="submit" value="New Task">
     </form>
+    <form action="logout.php">
+        <input type="submit" value="logout">
+    </form>
     <?php
         echo $_SESSION["username"];
     ?>
@@ -33,7 +36,7 @@
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>" . $row["name"] . "</tr> <br>";
-                echo "<tr>" . $row["description"] . "</tr>";
+                echo "<tr>" . $row["description"] . "</tr> <br>";
             }
         }
         ?>
