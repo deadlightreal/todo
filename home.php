@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form action="newTask.php">
+        <input type="submit" value="New Task">
+    </form>
     <?php
         echo $_SESSION["username"];
     ?>
