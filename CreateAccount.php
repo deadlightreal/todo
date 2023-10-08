@@ -6,4 +6,5 @@
 
     $code = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('$username', '$email', '$password')";
     $mysql = mysqli_query($sql, $code);
+    header("Location: login.php");
 ?>
