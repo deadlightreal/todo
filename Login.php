@@ -16,10 +16,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="FindAccount.php" class="main" method="POST">
-        <input type="text" name="username" id="username" placeholder="Enter username" required>
-        <input type="password" name="password" id="password" placeholder="Enter password" required>
-        <input type="submit" value="Login" id="submit">
-    </form>
+    <div class="main">
+        <form action="FindAccount.php" method="POST">
+            <input type="text" name="username" id="username" placeholder="Enter username" required>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+            <input type="submit" value="Login" id="submit">
+        </form>
+        <form action="Register.php">
+            <input type="submit" value="Register">
+        </form>
+    </div>
 </body>
 </html>
