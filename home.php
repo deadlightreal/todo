@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="newTask.php">
-        <input type="submit" value="New Task">
-    </form>
-    <form action="logout.php">
-        <input type="submit" value="logout">
-    </form>
+    <div  class="menu">
+        <form action="newTask.php">
+            <input type="submit" value="New Task">
+        </form>
+        <form action="logout.php">
+            <input type="submit" value="logout">
+        </form>
+    </div>
     <?php
         echo $_SESSION["username"];
     ?>
