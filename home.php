@@ -18,10 +18,10 @@
 <body>
     <div  class="menu">
         <form action="newTask.php">
-            <input type="submit" value="New Task">
+            <input class="menuBTN" type="submit" value="New Task">
         </form>
         <form action="logout.php">
-            <input type="submit" value="logout">
+            <input class="menuBTN" type="submit" value="logout">
         </form>
     </div>
     <?php

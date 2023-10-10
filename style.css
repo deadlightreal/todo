@@ -57,4 +57,33 @@ body {
     border-radius: 15px;
 }
 
-.menu 
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-image: linear-gradient(rgb(255, 21, 204), rgb(179, 15, 255));
+}
+
+.menuBTN {
+    height: 15%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: rgba(183, 0, 255, 0);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menuBTN:hover {
+    scale: 0.95;
+    text-decoration-line: underline;
+}
