@@ -59,11 +59,20 @@ body {
 
 .menu {
     position: absolute;
-    left: 0;
+    left: 0px;
     top: 0;
     width: 250px;
     height: 100%;
     background-image: linear-gradient(rgb(255, 21, 204), rgb(179, 15, 255));
+    outline: solid;
+    outline-width: 3px;
+}
+
+#baricon {
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
 }
 
 .menuBTN {

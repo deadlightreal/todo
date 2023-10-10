@@ -24,9 +24,6 @@
             <input class="menuBTN" type="submit" value="logout">
         </form>
     </div>
-    <?php
-        echo $_SESSION["username"];
-    ?>
     <br>
     <table>
         <tr>
@@ -48,5 +45,6 @@
         ?>
         </tr>
     </table>
+    <script src="https://kit.fontawesome.com/b38bc980a4.js" crossorigin="anonymous"></script>
 </body>
 </html>
