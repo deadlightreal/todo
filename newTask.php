@@ -16,8 +16,7 @@
 </head>
 <body>
     <form action="addpost.php" method="POST">
-        <input type="text" name="name" id="name" required>
-        <input type="text" name="description" id="description" required>
+        <input type="text" name="task" id="task" required>
         <input type="submit" value="Add Task">
     </form>
 </body>

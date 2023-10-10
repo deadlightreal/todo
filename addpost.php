@@ -1,11 +1,10 @@
 <?php
 session_start();
 include "dbConnection.php";
-$name = $_POST["name"];
-$description = $_POST["description"];
+$task = $_POST["task"];
 $owner = $_SESSION["username"];
 
-$code = "INSERT INTO `tasks` (`name`, `description`, `owner`) VALUES ('$name', '$description', '$owner')";
+$code = "INSERT INTO `tasks` (`task`, `owner`) VALUES ('$task', '$owner')";
 $add = mysqli_query($sql, $code);
 header("Location: home.php");
 ?>

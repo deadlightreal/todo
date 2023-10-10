@@ -1,12 +1,10 @@
 <?php
-    session_start();
-    if (isset($_SESSION["username"])) {
-
-    }
-    else {
-        header("Location: login.php");
-    }
+session_start();
+if (!isset($_SESSION["username"])) {
+    header("Location: login.php");
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div  class="menu">
+    <div class="menu">
         <form action="newTask.php">
             <input class="menuBTN" type="submit" value="New Task">
         </form>
@@ -25,8 +23,7 @@
         </form>
     </div>
     <br>
-    <table>
-        <tr>
+    <div class="taskContainer">
         <?php
         $username = $_SESSION["username"];
         include "dbConnection.php";
@@ -34,17 +31,18 @@
         $result = $sql->query($data);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo "<tr>" . $row["name"] . "</tr> <br>";
-                echo "<tr>" . $row["description"] . "</tr>";
-                echo '<form action="deletetask.php" method="POST">
-                        <input type="hidden" name="task-id" value="' . $row["id"] . '">
-                        <input type="submit" value="Delete">
-                      </form>';
+                echo '<div class="taskItem">';
+                echo '<div class="task">' . $row["task"] . '</div>';
+                echo '<form action="deletetask.php" method="POST">';
+                echo '<input type="hidden" name="task-id" value="' . $row["id"] . '">';
+                echo '<input type="submit" class="Delete" value="Delete">';
+                echo '</form>';
+                
+                echo '</div>';
             }
         }
         ?>
-        </tr>
-    </table>
+    </div>
     <script src="https://kit.fontawesome.com/b38bc980a4.js" crossorigin="anonymous"></script>
 </body>
 </html>
