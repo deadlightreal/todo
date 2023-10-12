@@ -17,14 +17,19 @@
 </head>
 <body>
     <div class="main">
+        <div class="TopMenuu">
+            <form action="Login.php">
+                <input type="submit" class="TopLoginR" value="Login">
+            </form>
+            <form action="Register.php">
+                <input type="submit" class="TopRegisterR" value="Register">
+            </form>
+        </div>
         <form action="CreateAccount.php" method="POST">
             <input type="text" name="username" id="username" placeholder="Enter username" required>
             <input type="email" name="email" id="email" placeholder="Enter email" required>
-            <input type="password" name="password" id="password" placeholder="Enter password" required>
-            <input type="submit" value="Register" id="submit">
-        </form>
-        <form action="Login.php">
-            <input type="submit" value="Login">
+            <input type="password" name="password" id="passwordR" placeholder="Enter password" required>
+            <input type="submit" value="Register" id="submitR">
         </form>
     </div>
 </body>

@@ -17,13 +17,21 @@
 </head>
 <body>
     <div class="main">
+        <div class="TopMenuu">
+            <form action="Register.php">
+                <input type="submit" class="TopRegister" value="Register">
+            </form>
+            <form action="Login.php">
+                <input type="submit" class="TopLogin" value="Login">
+            </form>
+        </div>
         <form action="FindAccount.php" method="POST">
-            <input type="text" name="username" id="username" placeholder="Enter username" required>
+            <input type="text" name="username" id="usernameL" placeholder="Enter username" required>
             <input type="password" name="password" id="password" placeholder="Enter password" required>
             <input type="submit" value="Login" id="submit">
         </form>
-        <form action="Register.php">
-            <input type="submit" value="Register">
+        <form action="">
+            <input type="submit" class="Forgot" value="Forgot password?">
         </form>
     </div>
 </body>
