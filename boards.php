@@ -6,6 +6,9 @@
     <title>Boards</title>
 </head>
 <body>
+    <form action="logout.php">
+        <input type="submit" value="Logout">
+    </form>
     <form action="createBoard.php">
         <input type="submit" value="Create New Board">
     </form>
