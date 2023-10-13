@@ -89,7 +89,7 @@ body {
 }
 
 .Forgot {
-    background-color: rgba(91, 180, 228, 1);
+    background-color: rgba(72, 157, 204, 1);
     border-radius: 25px;
     width: 26vw;
     height: 9vh;
@@ -117,6 +117,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     font-weight: bold;
+    outline: none;
     color: black;
     background-color: rgba(238, 249, 255, 1);
 }
@@ -127,6 +128,7 @@ body {
     left: 50%;
     border: none;
     top: 39.5vh;
+    outline: none;
     width: 26vw;
     height: 8vh;
     border-radius: 15px;
@@ -143,6 +145,7 @@ body {
     left: 50%;
     border: none;
     top: 51vh;
+    outline: none;
     width: 26vw;
     height: 8vh;
     border-radius: 15px;
@@ -161,6 +164,7 @@ body {
     top: 51.0vh;
     width: 26vw;
     height: 8vh;
+    outline: none;
     border-radius: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
@@ -193,6 +197,7 @@ body {
     border: none;
     top: 62.5vh;
     width: 26vw;
+    outline: none;
     height: 8vh;
     border-radius: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
