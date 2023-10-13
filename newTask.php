@@ -18,6 +18,9 @@
     <form action="addpost.php" method="POST">
         <input type="text" name="task" id="task" required>
         <input type="submit" value="Add Task">
+        <?php
+        echo '<input type="hidden" name="boardid" value="' . $_POST["boardid"] . '">';
+        ?>
     </form>
 </body>
 </html>

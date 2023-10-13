@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="createBoard.php">
-        
+        <input type="submit" value="Create New Board">
     </form>
     <?php
         session_start();
@@ -17,13 +17,16 @@
         $result = mysqli_query($sql, $code);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
+                echo '<div>';
                 echo "<div>" . $row["name"] . "</div>";
-                echo '<form action="board.php" method="POST>"';
-                echo '<input type="hidden" name="boardid" value="' . $row["id"] . '">';
+                echo '<form action="board.php" method="POST">';
+
                 echo '<input type="submit" value="Connect">';
+                echo '<input type="hidden" name="boardid" value="' . $row["id"] . '">';
 
 
                 echo '</form>';
+                echo '</div>';
             }
         }
     ?>

@@ -2,9 +2,9 @@
 session_start();
 include "dbConnection.php";
 $task = $_POST["task"];
-$owner = $_SESSION["username"];
+$boardid = $_POST["boardid"];
 
-$code = "INSERT INTO `tasks` (`task`, `owner`) VALUES ('$task', '$owner')";
+$code = "INSERT INTO `tasks` (`task`, `boardid`) VALUES ('$task', '$boardid')";
 $add = mysqli_query($sql, $code);
-header("Location: home.php");
+header("Location: boards.php");
 ?>

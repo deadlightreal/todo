@@ -9,7 +9,7 @@
 
     while ($row = mysqli_fetch_assoc($find)) {
         if ($password == $row["password"]) {
-            header("Location: home.php");
+            header("Location: boards.php");
             $_SESSION["username"] = $username;
         }
         else {
