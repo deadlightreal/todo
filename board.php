@@ -41,7 +41,15 @@
         $result = mysqli_query($sql, $code);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
+                echo '<div>';
                 echo '<div>' . $row["task"] . '</div>';
+                echo '<form action="deletetask.php" method="POST">';
+
+                echo '<input type="hidden" name="taskid" value="' . $row["id"] . '">';
+                echo '<input type="submit" value="Delete">';
+
+                echo '</form>';
+                echo '</div>';
             }
         }
     ?>
